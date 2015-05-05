@@ -1,13 +1,19 @@
 {
-  "name": "social-feed",
+  "name": "social-feed--emitter",
   "version": "0.1.1",
-  "homepage": "http://pavelk2.github.io/social-feed/",
+  "homepage": "https://github.com/giuseppeLeggero/social-feed/",
   "authors": [
     {
       "name": "Pavel Kucherbaev",
       "email": "pavel@kucherbaev.com",
       "homepage": "http://kucherbaev.com"
+    },
+    {
+      "name": "Giuseppe Leggero",
+      "email": "",
+      "homepage": ""
     }
+    
   ],
   "keywords":[
     "Twitter",
@@ -22,7 +28,7 @@
   "main": "js/jquery.socialfeed.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pavelk2/social-feed.git"
+    "url": "https://github.com/giuseppeLeggero/social-feed/"
   },
   "ignore": [
     "**/.*",
