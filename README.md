@@ -1,6 +1,7 @@
 # Social-feed-emitter
 
 This is a TEMPORARY PROJECT forked from pavelk2/social-feed.
+
 socialFeed.itemRendered event is added.
 
 The jQuery plugin which shows user feeds from the most popular social networks.
