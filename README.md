@@ -55,6 +55,11 @@ Initialize the social-feed plugin:
 ```html
 <script>
     $(document).ready(function(){
+        $('.social-feed-container').on('socialFeed.itemRendered', function () {
+                 // eg:
+                 $(this).masonry('reloadItems').masonry();
+        });
+        
         $('.social-feed-container').socialfeed({
                     // FACEBOOK
                     facebook:{
@@ -97,11 +102,6 @@ Initialize the social-feed plugin:
                     // Moderation function - if returns false, template will have class hidden
                     moderation: function(content){
                         return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
-                    },
-                    //update_period: 5000,
-                    // When all the posts are collected and displayed - this function is evoked
-                    callback: function(){
-                        console.log('all posts are collected');
                     }
                 });
         });
