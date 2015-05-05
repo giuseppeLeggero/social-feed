@@ -19,7 +19,7 @@ Social networks supported:
 ## Installation
 via http://bower.io:
 ```
-bower install social-feed
+bower install social-feed--emitter
 ```
 or download the latest release:
 
