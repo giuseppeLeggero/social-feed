@@ -1,4 +1,7 @@
-# Social-feed
+# Social-feed-emitter
+
+This is a TEMPORARY PROJECT forked from pavelk2/social-feed.
+socialFeed.itemRendered event is added.
 
 The jQuery plugin which shows user feeds from the most popular social networks.
 
@@ -19,11 +22,8 @@ Social networks supported:
 ## Installation
 via http://bower.io:
 ```
-bower install social-feed--emitter
+bower install social-feed-emitter
 ```
-or download the latest release:
-
-https://github.com/pavelk2/social-feed/releases
 ## Getting started
 
 Connect css:
@@ -108,10 +108,7 @@ Initialize the social-feed plugin:
 </script>
 ```
 
-When you run the plugin, make sure that you have your **webserver running**
-
 If you want to change the layout of the feed, you can do it in the **template.html** file.
-
 
 Also you can simply create template as a string and pass it as template_html parameter.
 If you don't need to show the feed from all the supported social networks, put the credentials only for those you need.
@@ -125,15 +122,3 @@ If you don't need to show the feed from all the supported social networks, put t
 ## License
 MIT
 
-## Issues
-Found a bug or want a feature to be implemented?
-Please report it here https://github.com/pavelk2/social-feed/issues
-
-Currently working on the server side: (https://github.com/pavelk2/social-feed-server)
-## Let me know
-
-If you use this plugin, please <a href="mailto:pavel@kucherbaev.com">write me a short message</a> with a link to the project where you embed the plugin, and some features you want to have implemented here. It helps me to stay focused on the important issues. *It is not mandatory, but I really appreciate it!*
-
-Do you want to become a part of the Social-feed? Write me and become an active contributor.
-
-Check out my other projects: http://kucherbaev.com
