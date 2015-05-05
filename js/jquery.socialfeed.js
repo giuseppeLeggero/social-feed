@@ -123,29 +123,24 @@ if (typeof Object.create !== 'function') {
                 }
                 if (options.media_min_width) {
 
-					var query = '[social-feed-id=' + data.id + '] img.attachment';
-					var image = $(query);
-
-					// preload the image
-					var height, width = '';
-					var img = new Image();
-					var imgSrc = image.attr("src");
-
-					$(img).load(function () {
-
-					    if (img.width < options.media_min_width) {
+                    var query = '[social-feed-id=' + data.id + '] img.attachment';
+                    var image = $(query);
+                    image.error(function() {
+                        image.hide();
+                    });
+                    image.load(function() {
+                        if (image.width() < options.media_min_width && image.is(":visible")) {
                             image.hide();
                         }
-					    // garbage collect img
-					    delete img;
+                    });
+                }
+                //if (lastelement) {
 
-					}).error(function () {
-					    // image couldnt be loaded
-					    image.hide();
+                //loaded[data.social_network]--;
+                //fireCallback();
+                //}
+                $(container).trigger('socialFeed.itemRendered');
 
-					}).attr({ src: imgSrc });
-
-				}
             }
 
         };
